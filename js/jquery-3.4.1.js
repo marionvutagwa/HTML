@@ -10589,10 +10589,18 @@ jQuery.noConflict = function( deep ) {
 // and CommonJS for browser emulators (#13566)
 if ( !noGlobal ) {
 	window.jQuery = window.$ = jQuery;
-}
-
-
-
-
-return jQuery;
+}return jQuery;
 } );
+
+$(document).ready(function(){
+	$("h1").click(function(){
+		alert("This is a header.");
+});
+
+$("p").click(function(){
+	alert("this is a pargraph.");
+});
+$("image").click(function(){
+	alert("This is an image.")
+})
+})
